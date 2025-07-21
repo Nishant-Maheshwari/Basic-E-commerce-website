@@ -16,7 +16,7 @@ review:{
 }
 },
 {
-productName: 'Nivia Football Studs',
+productName: "nivia Football Studs",
 priceCents: 899,
 review:{
   rating: 4.5,
@@ -24,7 +24,7 @@ review:{
 }
 },
 {
-productName: 'Linkin park vinyl',
+productName: `Linkin park vinyl`,
 priceCents: 399,
 review:{
   rating: 4.5,

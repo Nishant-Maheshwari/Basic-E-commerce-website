@@ -1,6 +1,6 @@
 let productContainer = document.querySelector('.productContainer') 
-let cartQautityDisplay = document.querySelector('.cart') 
-let cartQuatity = 0
+let cartQuantityDisplay = document.querySelector('.cart') 
+let cartQuantity = 0
 
 let productHTML = ``;
 
@@ -26,16 +26,31 @@ productContainer.innerHTML = productHTML
 let AddToCartBtn = document.querySelectorAll('.cartBtn')
 console.log(AddToCartBtn); 
 AddToCartBtn.forEach((button)=>{
+  const ProductName = button.dataset.productName
+  let matchingitem;
 button.addEventListener('click',()=>{
-  let productName = button.dataset.productName
-  
-  cart.push({
-    product: productName,
-    quatity:1
+  console.log(ProductName); 
+  cart.forEach((item)=>{
+    if(item.productName === ProductName){
+ matchingitem = item}
+  }) 
+
+  if(matchingitem){
+    matchingitem.quantity++
+  }else{
+cart.push({
+    productName:ProductName,
+    quantity:1
   })
+  
+  }
   console.log(cart);
   
-  cartQuatity++;
-  cartQautityDisplay.innerHTML = `Cart quatity:${cartQuatity}`
+  
+  
+
+  
+  cartQuantity++;
+  cartQuantityDisplay.innerHTML = `Cart quatity:${cartQuantity}`
 })
 })
