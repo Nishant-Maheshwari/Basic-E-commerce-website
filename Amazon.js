@@ -53,4 +53,5 @@ cart.push({
   cartQuantity++;
   cartQuantityDisplay.innerHTML = `Cart quatity:${cartQuantity}`
 })
-})
+}) 
+

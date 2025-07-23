@@ -32,4 +32,18 @@ review:{
 }
 },
 
-]
+]  
+function genreateId(){
+  let ids = ""
+  for(let i = 0; i < 16; i++){
+    let digits = (Math.floor(Math.random()*10))
+    ids += digits
+  } 
+  return ids
+}
+
+products.forEach((product)=>{
+product.id = genreateId()
+console.log(product);
+
+}) 
