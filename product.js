@@ -1,6 +1,7 @@
 let products = [
 {
 productName: 'Basketball',
+productId: genreateId(),
 priceCents: 799,
 review:{
   rating: 3,
@@ -9,6 +10,7 @@ review:{
 },
 {
 productName: 'Football',
+productId: genreateId(),
 priceCents: 2199,
 review:{
   rating: 5,
@@ -17,6 +19,7 @@ review:{
 },
 {
 productName: "nivia Football Studs",
+productId: genreateId(),
 priceCents: 899,
 review:{
   rating: 4.5,
@@ -25,6 +28,7 @@ review:{
 },
 {
 productName: `Linkin park vinyl`,
+productId: genreateId(),
 priceCents: 399,
 review:{
   rating: 4.5,
@@ -42,8 +46,8 @@ function genreateId(){
   return ids
 }
 
-products.forEach((product)=>{
-product.id = genreateId()
-console.log(product);
+// products.forEach((product)=>{
+// product.id = genreateId()
+// console.log(product);
 
-}) 
+// }) 
